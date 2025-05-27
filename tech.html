@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tech Club | Clubhub</title> 
-  <link rel="stylesheet" href="styles/tech-club.css" />
+  <link rel="stylesheet" href="tech-club.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -231,7 +231,7 @@
     <div class="footer-content">
       <div class="footer-about">
         <h3>Tech Club</h3>
-        <p>Part of ClubVerse at University</p>
+        <p>Part of ClubHub at University</p>
         <div class="social-icons">
           <a href="#"><i class="fab fa-github"></i></a>
           <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -255,10 +255,53 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 ClubVerse. All rights reserved.</p>
+      <p>&copy; 2025 ClubHub. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="scripts/main.js"></script>
+  <script> 
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerHeight = document.querySelector('.tech-nav').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Update URL without page reload
+                history.pushState(null, null, targetId);
+            }
+        });
+    });
+    
+    // Form submission
+    const joinForm = document.querySelector('.join-form');
+    if (joinForm) {
+        joinForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your application! We will contact you soon.');
+            this.reset();
+        });
+    }
+    
+    // Event button interactions
+    document.querySelectorAll('.event-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const eventName = this.closest('.event-card').querySelector('h3').textContent;
+            alert(`You're registering for: ${eventName}\n(Form would appear in a real implementation)`);
+        });
+    });
+});
+  </script>
 </body>
 </html>
