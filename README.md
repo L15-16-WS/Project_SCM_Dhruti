@@ -24,7 +24,7 @@ To view the project on your local machine:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/dhruti2206/Project_scm.git
+   git clone https://github.com/dhruti2206/Project_SCM.git
 2.Navigate to the project folder
 cd Project_scm
 Open the webpage
