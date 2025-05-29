@@ -33,5 +33,5 @@ Manually open the techclub.html file in your browser
 or
 If using VS Code, install Live Server and open techclub.html with it for a smoother experience.
 
-👩‍💻 Author
+## 👩‍💻 Author
 Dhruti Padasalgi
