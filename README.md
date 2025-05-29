@@ -31,7 +31,7 @@ Open the webpage
 
 -Manually open the tech.html file in your browser
 or
--If using VS Code, install Live Server and open tech.html with it for a smoother experience.
+If using VS Code, install Live Server and open tech.html with it for a smoother experience.
 
 ## 👩‍💻 Author
 Dhruti Padasalgi
