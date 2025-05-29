@@ -25,13 +25,13 @@ To view the project on your local machine:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/dhruti2206/Project_SCM.git
-2.Navigate to the project folder
+2.**Navigate to the project folder**
 cd Project_scm
 Open the webpage
 
-Manually open the techclub.html file in your browser
+-Manually open the tech.html file in your browser
 or
-If using VS Code, install Live Server and open techclub.html with it for a smoother experience.
+-If using VS Code, install Live Server and open tech.html with it for a smoother experience.
 
 ## 👩‍💻 Author
 Dhruti Padasalgi
