@@ -29,9 +29,15 @@ To view the project on your local machine:
 cd Project_scm
 Open the webpage
 
--Manually open the tech.html file in your browser
+- Manually open the tech.html file in your browser
 or
-If using VS Code, install Live Server and open tech.html with it for a smoother experience.
+- If using VS Code, install Live Server and open tech.html with it for a smoother experience.
 
 ## 👩‍💻 Author
 Dhruti Padasalgi
+
+## 🙏 Acknowledgements
+
+Thanks to our team members for their collaborative effort
+
+Dr. Monit Kapoor Sir – For valuable guidance
